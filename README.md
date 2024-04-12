@@ -2,6 +2,10 @@
 
 **ImageNet3D** dataset and helper code, from the following paper:
 
+## Overview
+
+All available CAD models are available [here](vis_models.md).
+
 ## Installation
 
 ## Download ImageNet3D
