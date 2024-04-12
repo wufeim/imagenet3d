@@ -18,10 +18,30 @@ hf_hub_download(
     local_dir_use_symlinks=False)
 ```
 
-## Visualizing Sample Data
+## Usage
+
+Visualizing sample raw data.
 
 ```sh
 python3 visualize_sample_data.py
+```
+
+Preprocessing data for 3D pose estimation.
+
+```sh
+python3 preprocess_data.py --center_and_resize
+```
+
+Preprocessing data for 6D pose estimation.
+
+```sh
+python3 preprocess_data.py
+```
+
+Visualizing sample preprocessed data.
+
+```sh
+python3 visualize_sample_data_processed.py
 ```
 
 ## Annotation Example
@@ -59,5 +79,14 @@ object_status = annot[0]['object_status']  # str, one of ('status_good', 'status
 # label indicating if multiple objects from same category very close to each other
 dense = annot[0]['dense']  # str, one of ('dense_yes', 'dense_no')
 ```
+
+* `object status`: quality of the object:
+  * Good (`status_good`): most parts of the object is visible in the image
+  * Partially visible (`status_partially`): a small part of the object is occluded by other objects or outside the image
+  * Barely visible (`status_barely`): only a small part of the object is visible; the other parts are occluded or outside the image
+  * Bad quality / no object (`status_bad`): most parts of the object is occluded or outside the image; we can see there is an object but very hard to tell the pose of the object
+* `dense`: if the object is very close to another object from the same category; here “close” is defined in the 2D image plane – two objects are close if the distance between them is small in the 2D image plane
+  * Not dense scene (`dense_no`): the object is not close to another object from the same category; there can be multiple objects from the same category in one image but the objects are far away from each other
+  * Dense scene (`dense_yes`): the object is very close to another object from the same category; they may occlude each other or just very close – imagine a parking lot where cars are close to each other.
 
 ## Citation
