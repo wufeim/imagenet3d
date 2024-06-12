@@ -6,6 +6,8 @@
 
 All available CAD models are available [here](vis_models.md).
 
+For details of ImageNet3D, please refer to [datasheet for dataset](datasheet_for_dataset.md)
+
 ## Installation
 
 ## Download ImageNet3D
