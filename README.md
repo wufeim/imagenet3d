@@ -2,6 +2,11 @@
 
 **ImageNet3D** dataset and helper code, from the following paper:
 
+ImageNet3D: Towards General-Purpose Object-Level 3D Understanding. Preprint, 2024.\
+[Wufei Ma](https://wufeim.github.io), [Guanning Zeng](https://scholar.google.com/citations?user=SU6ooAQAAAAJ), [Qihao Liu](https://qihao067.github.io/), [Letian Zhang](https://scholar.google.com/citations?hl=en&user=o25Si3QAAAAJ), [Adam Kortylewski](https://adamkortylewski.com/), [Yaoyao Liu](https://www.cs.jhu.edu/~yyliu/), [Alan Yuille](https://www.cs.jhu.edu/~ayuille/)\
+Johns Hopkins University\
+[[arXiv]](https://arxiv.org/abs/2406.09613), [[Project Page]](https://wufeim.github.io/imagenet3d/index.html)
+
 ## Overview
 
 All available CAD models are available [here](vis_models.md).
@@ -96,3 +101,12 @@ dense = annot[0]['dense']  # str, one of ('dense_yes', 'dense_no')
   * Dense scene (`dense_yes`): the object is very close to another object from the same category; they may occlude each other or just very close – imagine a parking lot where cars are close to each other.
 
 ## Citation
+
+```
+@article{ma2024imagenet3d,
+  title={ImageNet3D: Towards General-Purpose Object-Level 3D Understanding},
+  author={Ma, Wufei and Zeng, Guanning and Zhang, Guofeng and Liu, Qihao and Zhang, Letian and Kortylewski, Adam and Yuille, Alan},
+  journal={arXiv preprint	arXiv:2406.09613},
+  year={2024}
+}
+```
