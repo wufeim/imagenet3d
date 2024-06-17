@@ -106,7 +106,7 @@ dense = annot[0]['dense']  # str, one of ('dense_yes', 'dense_no')
 @article{ma2024imagenet3d,
   title={ImageNet3D: Towards General-Purpose Object-Level 3D Understanding},
   author={Ma, Wufei and Zeng, Guanning and Zhang, Guofeng and Liu, Qihao and Zhang, Letian and Kortylewski, Adam and Yuille, Alan},
-  journal={arXiv preprint	arXiv:2406.09613},
+  journal={arXiv preprint arXiv:2406.09613},
   year={2024}
 }
 ```
